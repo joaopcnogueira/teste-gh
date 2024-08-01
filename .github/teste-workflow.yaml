@@ -1,0 +1,13 @@
+name: echo_date
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+
+jobs:
+  echo_date:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo current date and time
+        run: date
