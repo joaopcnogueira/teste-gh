@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
       - name: Echo current date and time
         run: date
